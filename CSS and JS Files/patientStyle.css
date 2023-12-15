@@ -50,8 +50,8 @@ button:hover {
 .patient-info {
     margin-top: 20px;
     text-align: center;
-  background-color: #f2f2f2; /* Change the color as desired */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  background-color: #f2f2f2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 20px;
   border-radius: 10px;
 }
@@ -136,7 +136,7 @@ button:hover {
 .comorbidities-allergies {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Added alignment for top vertical alignment */
+  align-items: flex-start;
 }
 
 .comorbidities,
@@ -145,14 +145,14 @@ button:hover {
   padding: 8px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align the contents */
+  align-items: center;
 }
 
 .comorbidities table,
 .allergies table {
   width: 100%;
   table-layout: fixed;
-  text-align: center; /* Center align the table contents */
+  text-align: center;
 }
 
 .comorbidities table th,
@@ -172,16 +172,16 @@ button:hover {
 
 .patient-details-container {
   display: flex;
-  justify-content: center; /* Horizontally center the contents */
-  align-items: center; /* Vertically center the contents */
+  justify-content: center;
+  align-items: center;
 }
 
 .image-container {
-  margin-right: 20px; /* Add some spacing between the image and details */
+  margin-right: 20px;
 }
 
 .patient-details {
-  text-align: left; /* Left-align the text within the details */
+  text-align: left;
 }
 
 /*OTHERS*/
