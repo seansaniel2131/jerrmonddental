@@ -54,7 +54,6 @@
         $co_morbidities = $_POST["co_morbidities"];
         $allergies = $_POST["allergies"];
 
-        // File upload handling
         $target_dir = "./uploads/";
         $target_file = $target_dir . basename($_FILES["headshot"]["name"]);
         $file_upload_success = move_uploaded_file($_FILES["headshot"]["tmp_name"], $target_file);
@@ -62,7 +61,6 @@
         if (!$file_upload_success) {
             echo "Sorry, there was an error uploading the file.";
         } else {
-            // Database credentials
             $servername = "localhost";
             $username = "jerrmonddentalcl_sean";
             $password = "5ipFwFDgVR^8";
