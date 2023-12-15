@@ -57,7 +57,6 @@ if ($conn->connect_error) {
         <?php
         // SEARCH
         if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["search"])) {
-            // Get the patient ID from the search form
             $searchPatientId = $_POST["patient_id"];
 
             // FETCH DETAILS
