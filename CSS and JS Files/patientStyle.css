@@ -1,0 +1,254 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+}
+
+form {
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"],
+button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+.patient-info {
+    margin-top: 20px;
+    text-align: center;
+  background-color: #f2f2f2; /* Change the color as desired */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.patient-details {
+    margin-bottom: 10px;
+}
+
+.comorbidities-allergies,
+.treatment-history {
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.comorbidities-allergies {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comorbidities,
+.allergies,
+.treatment-history {
+    flex-basis: 48%;
+    padding: 8px;
+}
+
+.patient-details-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+  margin-right: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.patient-details {
+    width: 60%;
+    padding: 0 20px;
+}
+
+.comorbidities-allergies {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Added alignment for top vertical alignment */
+}
+
+.comorbidities,
+.allergies {
+  flex-basis: 48%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align the contents */
+}
+
+.comorbidities table,
+.allergies table {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center; /* Center align the table contents */
+}
+
+.comorbidities table th,
+.allergies table th {
+  width: 150px;
+  word-wrap: break-word;
+}
+
+.comorbidities table td,
+.allergies table td {
+  word-wrap: break-word;
+}
+
+.patient-info {
+  text-align: center;
+}
+
+.patient-details-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the contents */
+  align-items: center; /* Vertically center the contents */
+}
+
+.image-container {
+  margin-right: 20px; /* Add some spacing between the image and details */
+}
+
+.patient-details {
+  text-align: left; /* Left-align the text within the details */
+}
+
+/*OTHERS*/
+.navbar {
+  background-color: #0EACEC;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555555;
+  margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #333333;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(0,0,0,.85)" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" d="M1 5h30M1 16.5h30M1 28h30"/></svg>');
+    width: 24px;
+    height: 24px;
+  }
+
+  .navbar-nav {
+    display: flex;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 5px;
+  }
+
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e9e9e9;
+    z-index: 99;
+  }
+}

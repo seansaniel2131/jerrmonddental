@@ -1,0 +1,227 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    background-color: #4287f5;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-weight: bold;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    margin-right: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c8ebff;
+}
+
+.book-appointment-btn {
+    background-color: #fff;
+    color: #4287f5;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.book-appointment-btn:hover {
+    background-color: #4287f5;
+    color: #fff;
+}
+
+/* Hero Banner Styles */
+.hero-banner {
+    background-image: url(../img/13.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #4287f5;
+    border-radius: 10px;
+}
+
+/* "We Got You Covered!" Section Styles */
+.coverage-section {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+}
+
+.coverage-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.coverage-section p {
+    text-align: center;
+}
+
+.coverage-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.coverage-logos img {
+    max-width: 200px;
+    margin: 0 20px;
+    margin-top: -50px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .coverage-logos img {
+        max-width: 150px;
+        margin: 10px;
+        margin-top: -30px; 
+    }
+}
+
+/* Services Section Styles */
+.services-section {
+    padding: 60px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-card img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.learn-more-btn {
+    background-color: #4287f5;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.learn-more-btn:hover {
+    background-color: #3366cc;
+}
+
+/* Featured Services Section Styles */
+.featured-services-section {
+    background-color: #f2f2f2;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.featured-services-section h2 {
+    margin-bottom: 20px;
+}
+
+.featured-services-section p {
+    margin-bottom: 40px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #4287f5;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero-banner h1 {
+        font-size: 28px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
