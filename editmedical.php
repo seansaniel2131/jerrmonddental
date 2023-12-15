@@ -4,13 +4,11 @@ $username = "jerrmonddentalcl_sean";
 $password = "5ipFwFDgVR^8";
 $dbname = "jerrmonddentalcl_proj1";
 
-// Establishing database connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve patient ID from request
 if (isset($_GET["patient_id"])) {
     $patient_id = $_GET["patient_id"];
 } else {
@@ -18,13 +16,10 @@ if (isset($_GET["patient_id"])) {
     exit();
 }
 
-// Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
-    // Get the updated co-morbidities and allergies from the form
     $co_morbidities = $_POST["co_morbidities"];
     $allergies = $_POST["allergies"];
 
-    // Update the co-morbidities and allergies in the database
     $sql = "UPDATE Patients SET co_morbidities='$co_morbidities', allergies='$allergies' WHERE patient_id='$patient_id'";
     if ($conn->query($sql) === TRUE) {
         echo "Patient information updated successfully.";
@@ -33,11 +28,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["submit"])) {
     }
 }
 
-// Retrieve the patient's existing co-morbidities and allergies from the database
 $sql = "SELECT co_morbidities, allergies FROM Patients WHERE patient_id='$patient_id'";
 $result = $conn->query($sql);
 
-// Check if a patient with the given ID exists
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $co_morbidities = $row["co_morbidities"];
@@ -66,6 +59,5 @@ if ($result->num_rows > 0) {
 </html>
 
 <?php
-// Close the database connection
 $conn->close();
 ?>
