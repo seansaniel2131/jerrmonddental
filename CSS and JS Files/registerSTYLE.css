@@ -68,25 +68,25 @@ input[type="submit"]:hover {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   form {
     padding: 50px;
-    max-width: 80%; /* Adjust the width as desired */
-    height: 55vh; /* Adjust the height as desired */
+    max-width: 80%;
+    height: 55vh;
   }
 
 h2{
     font-size: 40px;
 }
   label {
-    font-size: 30px; /* Adjust the font size as desired */
+    font-size: 30px;
   }
 
   input[type="text"],
   input[type="number"] {
-    font-size: 28px; /* Adjust the font size as desired */
-    padding: 12px; /* Adjust the padding as desired */
+    font-size: 28px;
+    padding: 12px;
   }
 
   input[type="submit"] {
-    font-size: 35px; /* Adjust the font size as desired */
-    padding: 25px; /* Adjust the padding as desired */
+    font-size: 35px;
+    padding: 25px;
   }
 }
