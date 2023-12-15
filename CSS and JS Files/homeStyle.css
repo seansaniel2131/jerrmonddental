@@ -1,11 +1,9 @@
-/* Reset Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
 }
@@ -81,7 +79,6 @@ body {
     color: #fff;
 }
 
-/* Hero Banner Styles */
 .hero-banner {
     background-image: url(../img/13.jpg);
     background-position: center;
@@ -102,7 +99,6 @@ body {
     border-radius: 10px;
 }
 
-/* "We Got You Covered!" Section Styles */
 .coverage-section {
     background-color: #f2f2f2;
     padding: 40px 0;
@@ -132,7 +128,6 @@ body {
     margin-top: -50px;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
     .coverage-logos img {
         max-width: 150px;
@@ -141,7 +136,6 @@ body {
     }
 }
 
-/* Services Section Styles */
 .services-section {
     padding: 60px 0;
 }
@@ -188,7 +182,6 @@ body {
     background-color: #3366cc;
 }
 
-/* Featured Services Section Styles */
 .featured-services-section {
     background-color: #f2f2f2;
     padding: 60px 0;
@@ -203,7 +196,6 @@ body {
     margin-bottom: 40px;
 }
 
-/* Footer Styles */
 .footer {
     background-color: #4287f5;
     color: #fff;
@@ -211,7 +203,6 @@ body {
     padding: 20px 0;
 }
 
-/* Media Queries */
 @media(max-width: 768px) {
     .container {
         padding: 0 10px;
