@@ -47,21 +47,17 @@
       </thead>
       <tbody>
         <?php
-        // Replace the database connection details with your own
         $servername = "localhost";
         $username = "jerrmonddentalcl_sean";
         $password = "5ipFwFDgVR^8";
         $dbname = "jerrmonddentalcl_proj1";
         
-        // Create a new mysqli instance
         $mysqli = new mysqli($servername, $username, $password, $dbname);
 
-        // Check connection
         if ($mysqli->connect_error) {
           die("Connection failed: " . $mysqli->connect_error);
         }
 
-        // Fetch appointments from the database
         $sql = "SELECT AppointmentID, FirstName, ContactNumber, HMO_Benefactor, HMO_Partner, AppointmentDate, AppointmentTime FROM Appointments";
         $result = $mysqli->query($sql);
 
@@ -82,7 +78,6 @@
           echo "<tr><td colspan='7'>No appointments found</td></tr>";
         }
 
-        // Close the database connection
         $mysqli->close();
         ?>
       </tbody>
