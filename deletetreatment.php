@@ -11,13 +11,10 @@
     }
     
     if ($_SERVER["REQUEST_METHOD"] === "GET") {
-        // Get the treatment ID from the query string
         $treatmentId = $_GET["treatment_id"];
     
-        // Perform the deletion in your database
         $sql = "DELETE FROM TreatmentHistory WHERE treatment_id='$treatmentId'";
-    
-        // Execute the deletion query using your database connection $conn
+        
         if ($conn->query($sql) === TRUE) {
             echo "Treatment deleted successfully";
         } else {
